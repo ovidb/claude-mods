@@ -1,0 +1,8 @@
+{
+  "name": "blast-radius",
+  "version": "0.1.0",
+  "description": "Holds risky shell commands and shows exactly what they would delete or discard before you approve them.",
+  "author": { "name": "ovidb" },
+  "license": "MIT",
+  "types": "./types/index.d.ts"
+}

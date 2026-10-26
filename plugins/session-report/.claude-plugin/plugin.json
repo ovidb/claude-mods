@@ -1,0 +1,22 @@
+{
+  "name": "session-report",
+  "version": "0.1.0",
+  "description": "Writes a readable HTML report of the session: turns, cost, files changed, commands, subagents and notes. /report opens it; one is saved when the session ends.",
+  "author": { "name": "ovidb" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "autoSave": {
+      "type": "boolean",
+      "title": "Save at session end",
+      "description": "Write a report automatically when the session ends or is cleared.",
+      "default": true
+    },
+    "folder": {
+      "type": "string",
+      "title": "Reports folder",
+      "description": "Where reports are written. ~ means your home folder.",
+      "default": "~/.claude/session-reports"
+    }
+  }
+}

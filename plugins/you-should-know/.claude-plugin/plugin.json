@@ -1,0 +1,30 @@
+{
+  "name": "you-should-know",
+  "version": "0.1.0",
+  "description": "A second, cheap reviewer that reads what Claude just changed and flags the consequences you might miss, above the prompt.",
+  "author": { "name": "ovidb" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "model": {
+      "type": "string",
+      "title": "Reviewer model",
+      "description": "The model that reviews each turn. Haiku is the cheapest; Sonnet catches more.",
+      "default": "haiku",
+      "options": ["haiku", "sonnet", "opus"]
+    },
+    "reviewWhen": {
+      "type": "string",
+      "title": "Review when",
+      "description": "Review only turns that edited files or ran commands, or every turn.",
+      "default": "changes",
+      "options": ["changes", "every-turn"]
+    },
+    "notify": {
+      "type": "boolean",
+      "title": "Notify",
+      "description": "Also send a system notification when a note appears, so it reaches you away from the desk.",
+      "default": true
+    }
+  }
+}

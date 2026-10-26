@@ -1,0 +1,8 @@
+{
+  "name": "savvy-progress",
+  "version": "0.1.0",
+  "description": "A live band and panel showing every subagent Claude runs: what it is doing, its model, its steps and roughly what it costs.",
+  "author": { "name": "ovidb" },
+  "license": "MIT",
+  "types": "./types/index.d.ts"
+}

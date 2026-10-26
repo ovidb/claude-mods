@@ -1,0 +1,27 @@
+{
+  "name": "ovidb",
+  "owner": { "name": "ovidb" },
+  "metadata": { "description": "Claude Code mods by ovidb: guard rails, live progress and readable reports." },
+  "plugins": [
+    {
+      "name": "blast-radius",
+      "source": "./plugins/blast-radius",
+      "description": "Holds risky shell commands and shows exactly what they would delete or discard before you approve them."
+    },
+    {
+      "name": "savvy-progress",
+      "source": "./plugins/savvy-progress",
+      "description": "A live band and panel showing every subagent: what it is doing, its model, its steps and roughly what it costs."
+    },
+    {
+      "name": "you-should-know",
+      "source": "./plugins/you-should-know",
+      "description": "A cheap second reviewer that flags consequences of a turn you might miss, above the prompt."
+    },
+    {
+      "name": "session-report",
+      "source": "./plugins/session-report",
+      "description": "Writes a readable HTML report of the session: turns, cost, files changed, commands, subagents and notes."
+    }
+  ]
+}
